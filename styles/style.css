@@ -1,0 +1,312 @@
+@font-face {
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: "Roboto";
+  src: url("../fonts/Myriad-Pro_31655.ttf");
+  font-family: "Myriad"; }
+body {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-family: "Myriad", sans-serif; }
+
+header {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header > .logo {
+    min-width: 371px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    header > .logo > img {
+      width: 100px; }
+    header > .logo > span {
+      font-size: 57px;
+      text-transform: uppercase;
+      margin-left: 10px; }
+  @media (max-width: 790px) {
+    header > nav {
+      display: none; } }
+  header > nav > a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+    white-space: nowrap; }
+    header > nav > a:hover {
+      color: #00bdec; }
+  header .menu-mobile svg {
+    display: none;
+    width: 50px;
+    position: absolute;
+    right: 18px;
+    top: 42px; }
+    @media (max-width: 790px) {
+      header .menu-mobile svg {
+        display: block; } }
+  header .menu-mobile .menu-body {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 94px;
+    width: 150px;
+    height: 150px;
+    background-color: #00bdec;
+    flex-direction: column;
+    color: white;
+    border-radius: 30px; }
+    header .menu-mobile .menu-body a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      margin-top: 14px;
+      margin-left: 35px; }
+
+.red-font {
+  color: #ff5384; }
+
+.blue-font {
+  color: #00bdec;
+  text-transform: uppercase; }
+
+section.ad {
+  width: 100%;
+  min-height: 760px;
+  background-image: url(../img/backgrounds/back1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  section.ad > div.dark {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: 760px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    section.ad > div.dark > h1 {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      font-size: 50px;
+      text-transform: uppercase; }
+    section.ad > div.dark > p {
+      font-size: 22px; }
+    section.ad > div.dark > .buttom {
+      font-size: 15px;
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid white;
+      padding: 10px 30px;
+      cursor: pointer; }
+
+.service {
+  width: 100%;
+  height: auto;
+  background-color: #f8f8f8; }
+  .service .servise_wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline; }
+    .service .servise_wrapper .service_item {
+      min-width: 300px;
+      max-width: 32%;
+      margin-right: 10px;
+      text-align: center; }
+      .service .servise_wrapper .service_item > img {
+        width: 70px;
+        height: 76px; }
+      .service .servise_wrapper .service_item > h3 {
+        font-size: 24px;
+        font-weight: normal; }
+      .service .servise_wrapper .service_item > p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 2; }
+
+.portfolio {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  margin-bottom: 40px; }
+  .portfolio h2 {
+    font-weight: normal;
+    font-size: 35px; }
+  .portfolio img {
+    border: 2px solid red; }
+  .portfolio a {
+    margin-right: 10px; }
+  .portfolio h2:after {
+    display: block;
+    content: " ";
+    width: 100px;
+    border-bottom: 2px solid red;
+    margin-top: 1rem; }
+  .portfolio .portfolio_item {
+    text-align: center; }
+
+.advantages {
+  background-color: #1ba1e1;
+  width: 100%;
+  padding: 40px 0;
+  margin-bottom: 40px; }
+  .advantages .advantages_wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap; }
+    @media (max-width: 637px) {
+      .advantages .advantages_wrapper {
+        justify-content: center; } }
+    .advantages .advantages_wrapper .item {
+      max-width: 25%;
+      min-width: 150px;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-size: 26px; }
+      .advantages .advantages_wrapper .item .number {
+        font-size: 50px; }
+      .advantages .advantages_wrapper .item hr {
+        border: 0;
+        border-bottom: 2px solid white;
+        width: 50px; }
+
+.news {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  margin-bottom: 40px; }
+  .news h2 {
+    font-weight: normal;
+    font-size: 35px; }
+    .news h2:after {
+      display: block;
+      content: " ";
+      width: 100px;
+      border-bottom: 2px solid red;
+      margin-top: 1rem; }
+  .news .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap; }
+    @media (max-width: 774px) {
+      .news .items {
+        justify-content: center; } }
+    .news .items .item {
+      background-color: #f8f8f8;
+      max-width: 45%;
+      padding-right: 10px;
+      display: flex;
+      min-width: 360px; }
+      @media (max-width: 774px) {
+        .news .items .item {
+          margin-bottom: 20px; } }
+      .news .items .item .body {
+        padding: 20px;
+        position: relative; }
+        .news .items .item .body span {
+          font-style: italic; }
+        .news .items .item .body button {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          position: absolute;
+          right: 20px;
+          bottom: 10px; }
+          .news .items .item .body button::visited {
+            resize: none;
+            border: none; }
+
+.connect {
+  background-color: #1ba1e1;
+  width: 100%;
+  padding: 40px 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px; }
+  .connect .wrapper_connect {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .connect .wrapper_connect button {
+      padding: 0 20px;
+      color: white;
+      border: 2px solid white;
+      height: 3rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0);
+      cursor: pointer; }
+
+footer {
+  width: 100%;
+  color: white; }
+  footer .light-black {
+    width: 100%;
+    background-color: #161616; }
+    footer .light-black .wrapper-footer {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 30px 10px; }
+      @media (max-width: 700px) {
+        footer .light-black .wrapper-footer {
+          flex-wrap: wrap; } }
+      footer .light-black .wrapper-footer .item {
+        display: flex;
+        flex-direction: column;
+        max-width: 25%;
+        padding-right: 10px; }
+        @media (max-width: 700px) {
+          footer .light-black .wrapper-footer .item {
+            max-width: 50%; } }
+        @media (max-width: 550px) {
+          footer .light-black .wrapper-footer .item {
+            max-width: 95%; } }
+        footer .light-black .wrapper-footer .item h3 {
+          font-weight: normal; }
+        footer .light-black .wrapper-footer .item a {
+          text-decoration: none;
+          color: white; }
+      footer .light-black .wrapper-footer .about-us p {
+        margin: 0; }
+      footer .light-black .wrapper-footer .contacts img {
+        width: 19px;
+        margin-right: 15px; }
+  footer .dark-black {
+    width: 100%;
+    background-color: #000000;
+    padding: 15px 0; }
+    footer .dark-black p {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 20px 10px;
+      text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
